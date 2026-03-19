@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Er. Laser — Подбор оборудования из Китая</title>
+
+<style>
+
+.pricing{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:25px;
+margin-top:40px;
+}
+
+.price-card{
+background:#fff;
+padding:25px;
+border-radius:12px;
+text-align:center;
+box-shadow:0 5px 20px rgba(0,0,0,0.05);
+}
+
+.price-card h3{
+margin-bottom:10px;
+}
+
+.highlight{
+background:#000;
+color:#fff;
+}
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:25px;
+margin-top:40px;
+}
+
+.img-box{
+overflow:hidden;
+border-radius:14px;
+}
+
+.img-box img{
+width:100%;
+height:100%;
+object-fit:cover;
+transition:0.4s;
+}
+
+.img-box:hover img{
+transform:scale(1.05);
+}
+
+body{
+margin:0;
+font-family:Arial, Helvetica, sans-serif;
+background:#f9f9f9;
+color:#222;
+line-height:1.6;
+}
+
+.container{
+max-width:1100px;
+margin:auto;
+padding:40px 20px;
+}
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.logo{
+font-size:22px;
+font-weight:700;
+}
+
+.lang{
+cursor:pointer;
+font-size:14px;
+}
+
+.hero{
+padding:80px 0;
+background:url('images/work2.jpg') center/cover no-repeat;
+color:#fff;
+position:relative;
+}
+
+.hero::after{
+content:'';
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.6);
+}
+
+.hero *{
+position:relative;
+z-index:2;
+}
+.button{
+display:inline-block;
+margin-top:30px;
+padding:15px 28px;
+background:#000;
+color:#fff;
+text-decoration:none;
+border-radius:6px;
+}
+
+.section{
+padding:80px 0;
+border-top:1px solid #eee;
+}
+
+.features{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+margin-top:40px;
+}
+
+.card{
+background:#fff;
+padding:25px;
+border-radius:10px;
+box-shadow:0 5px 20px rgba(0,0,0,0.05);
+}
+
+.form{
+max-width:500px;
+}
+
+input, textarea{
+width:100%;
+padding:14px;
+margin-top:10px;
+border:1px solid #ddd;
+border-radius:6px;
+font-size:16px;
+}
+
+footer{
+text-align:center;
+padding:40px 20px;
+font-size:14px;
+color:#777;
+}
+
+.contact{
+margin-top:20px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<header>
+<div class="logo">Er. Laser</div>
+<div class="lang" onclick="toggleLang()">RU / EN</div>
+</header>
+
+<section class="hero">
+
+<h1 class="ru">Подбор и закупка профессионального оборудования из Китая</h1>
+<h1 class="en" style="display:none;">Professional Beauty Equipment Sourcing from China</h1>
+
+<p class="ru">
+Эксперт по подбору и закупке оборудования для салонов красоты и частных мастеров.
+Помогаю выбрать надёжные аппараты напрямую у производителей в Китае.
+</p>
+
+<p class="en" style="display:none;">
+Expert in sourcing professional beauty equipment directly from manufacturers in China for salons and private specialists.
+</p>
+
+<a href="#form" class="button ru">Оставить заявку</a>
+<a href="#form" class="button en" style="display:none;">Send Request</a>
+
+</section>
+
+<section class="section">
+
+<h2 class="ru">Почему выбирают меня</h2>
+<h2 class="en" style="display:none;">Why Clients Choose Me</h2>
+
+<div class="features">
+
+<div class="card">
+<p class="ru">Подбор оборудования под задачи вашего салона</p>
+<p class="en" style="display:none;">Equipment selection based on your business needs</p>
+</div>
+
+<div class="card">
+<p class="ru">Работа напрямую с китайскими производителями</p>
+<p class="en" style="display:none;">Direct cooperation with Chinese manufacturers</p>
+</div>
+
+<div class="card">
+<p class="ru">Экономия до 50% по сравнению с дилерами</p>
+<p class="en" style="display:none;">Save up to 50% compared to local dealers</p>
+</div>
+
+<div class="card">
+<p class="ru">Консультация и сопровождение сделки</p>
+<p class="en" style="display:none;">Full consultation and deal support</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- ДО/ПОСЛЕ -->
+
+<section class="section">
+
+<h2 class="ru">Результаты удаления</h2>
+<h2 class="en" style="display:none;">Our Works</h2>
+
+<div class="gallery">
+
+<img src="images/img_5239.jpg">
+<img src="images/img_5240.jpg">
+<img src="images/img_5241.jpg">
+<img src="images/img_5242.jpg">
+<img src="images/img_5243.jpg">
+<img src="images/img_5244.jpg">
+<img src="images/img_5245.jpg">
+<img src="images/img_5246.jpg">
+<img src="images/img_5247.jpg">
+<img src="images/img_5248.jpg">
+<img src="images/img_5249.jpg">
+
+<input type="range" min="0" max="100" value="50" id="slider">
+
+</div>
+
+</section>
+
+
+<!-- ГАЛЕРЕЯ -->
+
+/site
+  index.html
+  /images
+    img_5239.jpg
+    img_5240.jpg
+    img_5241.jpg
+    img_5242.jpg
+    img_5243.jpg
+    img_5244.jpg
+    img_5245.jpg
+    img_5246.jpg
+    img_5247.jpg
+    img_5248.jpg
+    img_5249.jpg
+
+</section>
+
+<!-- ПРАЙС -->
+
+<section class="section">
+
+<h2 class="ru">Стоимость и условия</h2>
+<h2 class="en" style="display:none;">Pricing</h2>
+
+<div class="pricing">
+
+<div class="price-card highlight">
+<h3>Консультация</h3>
+<p>5 000 рублей</p>
+</div>
+
+<div class="price-card">
+<h3>Подбор оборудования</h3>
+<p>40 000 рублей</p>
+</div>
+
+<div class="price-card">
+<h3>Полное сопровождение. От подбора до доставки к вашей двери </h3>
+<p>70 000 рублей</p>
+</div>
+
+<div class="price-card">
+<h3>Экономия</h3>
+<p>До 50% дешевле дилеров</p>
+</div>
+
+<div class="price-card">
+<h3>Сроки доставки</h3>
+<p>От 30 до 40 дней</p>
+</div>
+
+</section>
+
+
+
+<section class="section" id="form">
+
+<h2 class="ru">Оставить заявку</h2>
+<h2 class="en" style="display:none;">Leave a Request</h2>
+
+<div class="form">
+
+<input type="text" placeholder="Ваше имя / Your name">
+<input type="text" placeholder="Телефон / Phone">
+<textarea placeholder="Какое оборудование вас интересует? / What equipment are you looking for?"></textarea>
+
+<a class="button" href="https://wa.me/79947774448">Отправить</a>
+
+</div>
+
+<div class="contact">
+
+<p>Telegram / WhatsApp</p>
+<p><strong>+7 994 777 444 8</strong></p>
+
+</div>
+
+</section>
+
+<footer>
+
+Ernest Kagramanyan — Er. Laser  
+Beauty Equipment Sourcing from China
+
+</footer>
+
+</div>
+
+<script>
+
+function toggleLang(){
+
+let ru=document.querySelectorAll('.ru')
+let en=document.querySelectorAll('.en')
+
+ru.forEach(el=>{
+el.style.display = el.style.display === "none" ? "block":"none"
+})
+
+en.forEach(el=>{
+el.style.display = el.style.display === "none" ? "block":"none"
+})
+
+}
+
+</script>
+
+</body>
+</html>
+
+<script>
+
+const slider = document.getElementById('slider');
+const before = document.getElementById('beforeImg');
+
+slider.addEventListener('input', function(){
+before.style.clipPath = inset(0 ${100 - this.value}% 0 0)
+})
+
+</script>
+
