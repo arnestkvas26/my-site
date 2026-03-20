@@ -1,4 +1,4 @@
-[index.html](https://github.com/user-attachments/files/26134800/index.html)
+[index.html](https://github.com/user-attachments/files/26134960/index.html)
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html>
 <head>
@@ -10,7 +10,9 @@
   <style type="text/css">
     p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 13.0px 'Helvetica Neue'; color: #000000}
     p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 13.0px 'Helvetica Neue'; color: #000000; min-height: 15.0px}
+    p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; font: 13.0px '.AppleSystemUIFontMonospaced'; color: #000000}
     span.s1 {color: #04359d}
+    span.s2 {font: 13.0px 'Helvetica Neue'}
   </style>
 </head>
 <body>
@@ -278,5 +280,28 @@
 <p class="p1">&lt;/div&gt;</p>
 <p class="p2"><br></p>
 <p class="p1">&lt;script&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">function toggleLang(){</p>
+<p class="p1">document.querySelectorAll('.ru').forEach(el=&gt;{</p>
+<p class="p1">el.style.display = el.style.display === "none" ? "block":"none"</p>
+<p class="p1">})</p>
+<p class="p1">document.querySelectorAll('.en').forEach(el=&gt;{</p>
+<p class="p1">el.style.display = el.style.display === "none" ? "block":"none"</p>
+<p class="p1">})</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">const slider = document.getElementById('slider');</p>
+<p class="p1">const before = document.getElementById('beforeImg');</p>
+<p class="p2"><br></p>
+<p class="p1">if(slider &amp;&amp; before){</p>
+<p class="p1">slider.addEventListener('input', function(){</p>
+<p class="p3"><span class="s2">before.style.clipPath =</span> inset(0 ${100 - this.value}% 0 0)</p>
+<p class="p1">})</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;/script&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;/body&gt;</p>
+<p class="p1">&lt;/html&gt;</p>
 </body>
 </html>
